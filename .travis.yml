@@ -10,14 +10,14 @@ addons:
       - xvfb
       - espeak
       - python-espeak
-      - dbus
-      - python-dbus
-      - python-dbus-dev
-      - libjack-jackd2-0
-      - jackd2
+      #- dbus
+      #- python-dbus
+      #- python-dbus-dev
+      #- libjack-jackd2-0
+      #- jackd2
       - libpulse-dev
-      - portaudio19-dev
-      - libsonic-dev
+      #- portaudio19-dev
+      #- libsonic-dev
 
 install:
   - export DISPLAY=':99.0'
