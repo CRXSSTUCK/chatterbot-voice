@@ -4,6 +4,9 @@ python:
   - '3.4'
   - '2.7'
   
+os:
+  - linux
+  
 addons:
   apt:
     packages:
@@ -23,7 +26,8 @@ addons:
 install:
   - export DISPLAY=':99.0'
   - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
-  - pip install coveralls flake8
+  - pip install coveralls flake8 wheel
+  - pip install pyaudio
   - pip install -r requirements.txt
 
 script:
