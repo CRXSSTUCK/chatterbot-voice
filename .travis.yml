@@ -20,7 +20,7 @@ addons:
       - python-dbus-dev
       - jackd2
       #- libpulse-dev
-      #- portaudio19-dev
+      - portaudio19-dev
       #- libsonic-dev
 
 install:
