@@ -1,4 +1,3 @@
-sudo: false
 language: python
 
 python:
@@ -11,12 +10,14 @@ addons:
       - xvfb
       - espeak
       - python-espeak
+      - python-pyaudio
+      - python3-pyaudio
       #- dbus
       #- python-dbus
       #- python-dbus-dev
       #- libjack-jackd2-0
-      #- jackd2
-      - libpulse-dev
+      - jackd2
+      #- libpulse-dev
       #- portaudio19-dev
       #- libsonic-dev
 
