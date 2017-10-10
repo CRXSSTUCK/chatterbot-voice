@@ -8,11 +8,12 @@ addons:
   apt:
     packages:
       - xvfb
-
-before_install:
-  - sudo apt-get install -y espeak python-espeak
-  - sudo apt-get install -y dbus python-dbus python-dbus-dev
-  - sudo apt-get install -y jackd2
+      - espeak
+      - python-espeak
+      - dbus
+      - python-dbus
+      - python-dbus-dev
+      - jackd2
 
 install:
   - export DISPLAY=':99.0'
